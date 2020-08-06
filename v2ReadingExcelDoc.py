@@ -1,30 +1,51 @@
-import xlrd #reads excel doc need to pip install xlrd
+import xlrd #whats used to read excel document. get by 'pip install xlrd'
 
-loc = input("What file would you like to open (please put in full location)\n")
+def main():
+	fileLocation = getFile()	
+	X5 = calculate(N, x)
+	print("X5 =",X5)
 
-#open workbook and sheet
-workBook = xlrd.open_workbook(loc)
-sheet = workBook.sheet_by_index(0)
 
-#print data
-N = sheet.row_values(0)[1:]
+def getFile():
+	while True:
+		try:
+			fileLocation = input("What file would you like to open (please put in full location)\n")
+			workBook = xlrd.open_workbook(fileLocation)
+			
+			break
+		except OSError:
+			print("invalid file name please try again")
+	return fileLocation
 
-print(N)
-x = sheet.row_values(1)[1:]
-x.remove('')
-print(x)
+#Parameters are both lists
+def calculate(N, x):
+	term = []
+	num = 0
+	for i in x:
+	    term.append(N[-1]/N[num] * i)
+	    num=num+1
 
-term = []
-num = 0
-for i in x:
-    term.append(N[-1]/N[num] * i)
-    num=num+1
+	n = 5.0
+	termSum=0
+	for i in term:
+	    termSum= termSum + i
 
-n = 5.0
-termSum=0
-for i in term:
-    termSum= termSum + i
+	X5 = 1/n * termSum
+	return X5
 
-X5 = 1/n * termSum
 
-print("X5 =",X5)
+def GetN(fileLocation):
+	workBook = xlrd.open_workbook(fileLocation)
+	sheet = workBook.sheet_by_index(0)
+	N = sheet.row_values(0)[1:]
+	return N
+
+
+def getx(fileLocation):
+	workBook = xlrd.open_workbook(fileLocation)
+	sheet = workBook.sheet_by_index(0)
+	x = sheet.row_values(1)[1:]
+	x.remove('')
+	return x
+
+
