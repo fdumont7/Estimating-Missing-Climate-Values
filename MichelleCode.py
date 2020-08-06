@@ -23,4 +23,4 @@ n = 5.0
 
 X5 = 1/n *(term1 + term2 + term3 + term4)
 
-print(X5)
+print("X5 =",X5)

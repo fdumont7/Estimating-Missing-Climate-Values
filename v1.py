@@ -17,4 +17,4 @@ for i in term:
 
 X5 = 1/n * termSum
 
-print(X5)
+print("X5 =",X5)
