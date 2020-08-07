@@ -1,4 +1,12 @@
 # Normal-Ratio
+### requirements:
 
-to run in command prompt:
+xlrd
+
+
+
+
+
+
+#### to run in command prompt:
 py run.py
