@@ -1,10 +1,12 @@
 # Normal-Ratio
-requirements:
+### requirements:
 
 xlrd
 
 
 
 
-to run in command prompt:
+
+
+#### to run in command prompt:
 py run.py
