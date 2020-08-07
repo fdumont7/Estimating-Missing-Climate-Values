@@ -2,7 +2,7 @@ import xlrd #whats used to read excel document. get by 'pip install xlrd'
 
 def main():
 	fileLocation = getFile()	
-	X5 = calculate(N, x)
+	X5 = calculate(getN(fileLocation), getx(fileLocation))
 	print("X5 =",X5)
 
 
@@ -34,7 +34,7 @@ def calculate(N, x):
 	return X5
 
 
-def GetN(fileLocation):
+def getN(fileLocation):
 	workBook = xlrd.open_workbook(fileLocation)
 	sheet = workBook.sheet_by_index(0)
 	N = sheet.row_values(0)[1:]
