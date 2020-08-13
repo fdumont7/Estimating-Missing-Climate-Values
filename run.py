@@ -9,7 +9,7 @@ FI = FileInformation()
 
 E = Estimate()
 
-print(E.NormalRatio(FI.getNs, FI.getNi, FI.getn, FI.getXi))
+print("AA =", E.AA(FI.getXi(), FI.getn()), "\nNormal Ratio =", E.NormalRatio(FI.getNs(), FI.getNi(), FI.getn(), FI.getXi()), "\nGC = ", E.GC(FI.getLongitude(), FI.getLatitude(), FI.getn(), FI.getXi()))
 
 
 

@@ -8,11 +8,13 @@
 class Estimate:
 
 	#Simple Arithmetic Average
-	def AA(Xi, n):
+	def AA(self, Xi, n):
 		return sum(Xi)/n
 
 	
 	def NormalRatio(self,Ns, Ni, n, Xi):
+		
+
 		num = 0
 		fullSum = 0
 		for i in Xi:
@@ -21,7 +23,7 @@ class Estimate:
 		Yi = (1/n)*fullSum
 		return Yi
 
-	def GC(xi, yi, n, Xi):
+	def GC(self,xi, yi, n, Xi):
 		num = 0
 		fullSum = 0
 		bottumSum = 0
