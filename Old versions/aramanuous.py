@@ -7,17 +7,20 @@ import MATH
 # n is the number of surrounding rain gauges
 n = 4.0
 
+# N is the average annual precipitation for rain gauge(i)
 N1 = 43.33
 N2 = 45.55
 N3 = 42.42
 N4 = 41.22
 N5 = 40.37
 
+#  x(i) is the precipitation for rain gauge(i) x5 is missing
 x1 = 4.2
 x2 = 3.8
 x3 = 3.9
 x4 = 4.0
 
+# lat(i) and lon(i) are the latitude and longitude for rain gauge(i)
 lat1 = 39.3531
 lat2 = 39.1667
 lat3 = 39.1033
@@ -30,6 +33,7 @@ lon3 = -84.4189
 lon4 = -84.5833
 lon5 = -84.4167
 
+# d is the distance from rain gauge5 to rain gauge(i) as calculated by distance.py
 d1 = 22.597600953658*1000
 d2 = 40.1913268708822*1000
 d3 = 46.3019543373498*1000
