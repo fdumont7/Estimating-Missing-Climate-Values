@@ -4,7 +4,7 @@
 import MATH
 
 
-
+# n is the number of surrounding rain gauges
 n = 4.0
 
 N1 = 43.33
