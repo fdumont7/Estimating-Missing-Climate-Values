@@ -13,8 +13,6 @@ class Estimate:
 
 	
 	def NormalRatio(self,Ns, Ni, n, Xi):
-		
-
 		num = 0
 		fullSum = 0
 		for i in Xi:
@@ -22,6 +20,7 @@ class Estimate:
 			num = num + 1
 		Yi = (1/n)*fullSum
 		return Yi
+
 
 	def GC(self,xi, yi, n, Xi):
 		num = 0
