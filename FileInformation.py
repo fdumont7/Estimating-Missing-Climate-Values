@@ -23,7 +23,7 @@ class FileInformation:
 	def getXi(self):
 		
 		x = self.sheet.row_values(1)[1:]
-		x.remove('')
+		#x.remove('')
 		return x
 
 	#n = number of surrounding stations.
@@ -69,7 +69,16 @@ class FileInformation:
 	#may need a set k function as well idk where k is held
 	def getk(self):
 		
-		k = self.sheet.row_values(3)[1]
+		k = self.sheet.row_values(5)[1]
 		return k
+
+	def gethi(self):
+		hi = self.sheet.row_values(6)[1:]
+		return hi
+
+	def getri(self):
+		ri = self.sheet.row_values(7)[1:]
+		return ri
+
 
 		
