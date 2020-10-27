@@ -66,16 +66,17 @@ class FileInformation:
 
 	#distance of friction varying from 1 to 6
 	#returns int k
-	#may need a set k function as well idk where k is held
 	def getk(self):
 		
 		k = self.sheet.row_values(5)[1]
 		return k
 
+	#absolute value of difference in elevation between the target and surrounding station
 	def gethi(self):
 		hi = self.sheet.row_values(6)[1:]
 		return hi
 
+	#pearsons correlation coefficient between the target station and each neighboring station
 	def getri(self):
 		ri = self.sheet.row_values(7)[1:]
 		return ri
