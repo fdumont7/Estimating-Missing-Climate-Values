@@ -2,14 +2,18 @@
 ### To setup in command prompt with python installed:
 
 -change directory to Estimating-Missing-Climate-Values.
+
 -type: pip install xlrd.
 
 
 ### to setup in pycharm:
 
 -bring up project in pycharm.
+
 -go to settings-> project interpreter.
+
 -press the plus button on the right.
+
 -search for xlrd and install the package.
 
 
@@ -18,6 +22,7 @@
 
 ### to run in pycharm:
 -find run.py in the project explorer
+
 -right click run.py and click run 'run'
 
 ### format for the excel document:
