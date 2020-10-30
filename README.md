@@ -55,7 +55,7 @@ hi= absolute value of difference in elevation between the target and surrounding
 
 ri= pearsons correlation coefficient between the target station and each neighboring station
 
-See testdoc.xlsx for example of the proper format
+**See testdoc.xlsx for example of the proper format**
 
 
 
