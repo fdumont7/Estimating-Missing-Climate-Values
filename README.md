@@ -47,9 +47,9 @@ longitude = Longitude of the ith nearby station. should be a list
 
 latitude = Latitude of the ith neaby station. should be a list
 
-di= Distance from teh target station to the ith surrounding station
+di= Distance from the target station to the ith surrounding station
 
-k= distance of frictionv varying from 1 to 6
+k= distance of friction varying from 1 to 6
 
 hi= absolute value of difference in elevation between the target and surrounding station
 
