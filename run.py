@@ -2,8 +2,6 @@
 from FileInformation import FileInformation
 from Estimate import Estimate
 
-#v2ReadingExcelDoc.main()
-
 
 FI = FileInformation()
 
