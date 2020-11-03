@@ -23,7 +23,7 @@ CCW = E.CCW(FI.getri(), FI.getXi())
 
 ONRID = E.ONRID(FI.getNs(), FI.getNi(), FI.getdi(), FI.getXi())
 
-print("AA =", AA , "\nNormal Ratio =", NR , "\nGC = ", GC, "\nNRGC =", NRGC, "\nIDW =", IDW , "\nMIDW =", MIDW, "\nCCW =", CCW , "\nONRID =", ONRID)
+print("AA =", AA , "\nNR =", NR , "\nGC = ", GC, "\nNRGC =", NRGC, "\nIDW =", IDW , "\nMIDW =", MIDW, "\nCCW=", CCW , "\nONRID =", ONRID)
 
 
 
