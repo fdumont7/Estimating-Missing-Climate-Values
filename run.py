@@ -9,7 +9,7 @@ E = Estimate()
 
 AA = E.AA(FI.getXi(), FI.getn())
 
-NR = E.NormalRatio(FI.getNs(), FI.getn(), FI.getNi(), FI.getXi())
+NR = E.NR(FI.getNs(), FI.getn(), FI.getNi(), FI.getXi())
 
 GC = E.GC(FI.getLongitude(), FI.getLatitude(),  FI.getXi())
 
